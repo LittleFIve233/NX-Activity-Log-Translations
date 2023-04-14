@@ -22,10 +22,10 @@
     "common": {
         "12H": "$[h]$[s]",
         "activityFor": {
-            "day": "$[m] $[d]$[s] 当日记录",
-            "dayYear": "$[y]年 $[m]  $[d]$[s] 年日记录",
-            "month": "$[y]年 $[m] 当月记录",
-            "year": "$[y]年 年度记录"
+            "day": "$[m] $[d]$[s] 本日记录",
+            "dayYear": "$[y] $[m]  $[d]$[s] 年日记录",
+            "month": "$[y] $[m] 本月记录",
+            "year": "$[y] 年度记录"
         },
         "AM": "上午",
         "am": "上午",
@@ -41,7 +41,8 @@
         },
         "close": "关闭",
         "dateFormat": "$[m] $[d]$[s]",
-        "dateFormatYear": "$[y]年 $[m] $[d]$[s]",
+        "dateFormatYear": "$[y] $[m] $[d]$[s]",
+        "yearSuffix": "年",
         "dateSuffix": {
             "nd": "日",
             "rd": "日",
@@ -71,7 +72,7 @@
             "1day": "1 天前玩过",
             "days": "$[d] 天前玩过",
             "date": "上次游戏于 $[m] $[d]$[s]",
-            "dateYear": "上次游戏于 $[y]年 $[m] $[d]$[s]"
+            "dateYear": "上次游戏于 $[y] $[m] $[d]$[s]"
         },
         "month": {
             "jan": "1月",
@@ -208,7 +209,7 @@
             "body": "找不到图像或图像已损坏。请检查它是否正确命名或保存放置在sdmc:/config/NX-Activity-Log/background.png",
             "heading": "发生错误："
         },
-        "imageHint": "将设置位于sdmc:/config/NX-Activity-Log/background.png的图像为应用程序的背景。如果图像分辨率不足1280x720，它将填充为合适的契合度",
+        "imageHint": "将设置位于sdmc:/config/NX-Activity-Log/background.png的图像为软件的背景。如果图像分辨率不足1280x720，它将填充为合适的契合度",
         "line": "间隔行",
         "mutedLine": "暗色线条",
         "mutedText": "暗淡文本",
@@ -217,13 +218,13 @@
         "text": "文本颜色"
     },
     "details": {
-        "allTime": "所有时间的记录",
+        "allTime": "所有时间记录",
         "avgPlaytime": "平均游戏时长",
         "break": {
-            "appClosed": "程序已关闭",
-            "appLaunched": "程序已启动",
-            "appResumed": "程序已恢复",
-            "appSuspended": "程序已挂起",
+            "appClosed": "软件已关闭",
+            "appLaunched": "软件已启动",
+            "appResumed": "软件已恢复",
+            "appSuspended": "软件已挂起",
             "heading": "游戏会话细节",
             "length": "会话时长",
             "playtime": "总游戏时长"
@@ -269,21 +270,21 @@
                 "light": "白色系"
             },
             "themeEdit": "自定义主题",
-            "themeHint": "用于程序的主题。自动根据Switch的设置选择黑色系或者白色系主题。选择自定义可以设置背景图像并调整颜色。"
+            "themeHint": "用于本软件的主题。\n自动根据Switch的设置选择黑色系或者白色系主题。选择自定义可以设置背景图像并调整颜色。"
         },
         "importExport": {
             "confirmDelete": "您确定要删除所有导入的数据吗？",
             "confirmDeleteBody": "此操作无法撤消。",
             "deleteImport": "删除导入的数据",
-            "deleteImportHint": "删除之前导入的游玩数据。必须重新启动本程序才能使其生效。",
+            "deleteImportHint": "删除之前导入的游玩数据。必须重新启动本软件才能使其生效。",
             "deleteSuccessful": "已成功删除导入的数据。",
             "export": "将游玩数据导出为JSON文件",
             "exporting": "正在导出数据...",
-            "exportHint": "将所有用户的游玩数据导出到：sdmc:/switch/NX-Activity-Log/export.json文件中。如果该文件已经存在，它将被覆盖。",
+            "exportHint": "将所有用户的游玩数据导出到：sdmc:/switch/NX-Activity-Log/export.json文件中。\n如果该文件已经存在，它将被覆盖。",
             "exportSuccessful": "游玩数据导出成功。",
             "import": "从JSON文件导入游玩数据",
             "importing": "正在导入数据...",
-            "importHint": "从sdmc:/switch/NX-Activity-Log/import.json文件中导入并覆盖之前导入的游玩数据到NX-Activity-Log。数据将被匹配到关联的用户名。必须重新启动应用程序才能使其生效。",
+            "importHint": "从sdmc:/switch/NX-Activity-Log/import.json文件中导入并覆盖之前导入的游玩数据到NX-Activity-Log。数据将会匹配关联的用户名。必须重新启动软件才能使其生效。",
             "importSuccessful": "游玩数据导入成功。",
             "heading": "导入和导出",
             "noImportFile": "在指定的位置找不到import.json文件。"
@@ -291,11 +292,11 @@
         "launch": {
             "heading": "页面选项",
             "screen": "默认页面",
-            "screenHint": "打开应用程序或选择用户后默认显示的页面",
+            "screenHint": "打开软件或选择用户后默认显示的页面",
             "sort": "默认排序方式",
             "sortHint": "“所有记录”中默认的排序方法。",
             "view": "默认显示类型",
-            "viewHint": "“最近记录”中的默认显示页面。"
+            "viewHint": "“最近记录”中的默认显示类型。"
         },
         "other": {
             "adjust": "调整游戏时间",
@@ -305,21 +306,21 @@
             "hideHint": "选择要在NX-Activity-Log中隐藏的游戏。",
             "replace": "替换用户页面",
             "replaceBox": {
-                "error": "发生错误：",
-                "errorMsg1": "在默认的位置没有找到此程序的.nro文件：",
-                "errorMsg2": "此功能要求.nro文件存在于此位置。",
-                "errorMsg3": "请移动或重命名任意文件和文件夹，然后重试。",
+                "error": "发生错误！",
+                "errorMsg1": "在默认的位置没有找到需要的.nro文件：",
+                "errorMsg2": "此功能要求此位置存在.nro文件。",
+                "errorMsg3": "请移动或重命名文件或文件夹，然后重试。",
                 "success": "安装成功！",
                 "successMsg1": "检测到以下自制系统并启用了此功能：",
-                "successMsg2": "注意：此功能不使用任何系统模块，如果遇到任何错误，请在应用中禁用此功能或删除",
-                "successMsg3": "sdmc:/<CFW>/0100000000001013/exefs.nsp"
+                "successMsg2": "注意：此功能不使用任何系统模块，如果遇到任何问题，请在应用中禁用此功能或删除以下路径的文件",
+                "successMsg3": "sdmc:/<CFW>/<LayeredFS>/0100000000001013/exefs.nsp"
             },
-            "replaceHint": "替换用户页面为本程序。需要LayeredFS支持或Atmosphere 0.10.0+、ReiNX或SXOS自制系统。"
+            "replaceHint": "替换用户页面为本程序。\n需要LayeredFS支持或Atmosphere 0.10.0+、ReiNX或SXOS自制系统。"
         },
         "support": "你可以在Ko-fi网站上支持我：",
-        "translations": "感谢以下人员在翻译应用程序时提供的帮助：",
+        "translations": "感谢以下人员在翻译本软件时提供的帮助：",
         "update": "检查更新",
-        "updateHint": "注意：若使用了90DNS，如果遇到问题，只需再试一次。"
+        "updateHint": "注意：若使用了90DNS，如果更新遇到问题，请再试一次。"
     },
     "update": {
         "cancel": "取消",
@@ -327,8 +328,8 @@
             "dl": "下载中...",
             "error": "无法下载文件",
             "success": "更新文件已下载！",
-            "successHint": "应用程序即将更新并关闭。",
-            "successHintPage": "应用程序即将更新并重新启动。"
+            "successHint": "软件将更新并关闭。",
+            "successHintPage": "软件将更新并重新打开。"
         },
         "error": {
             "heading": "无法检查更新！",
@@ -337,9 +338,9 @@
         "heading": "更新应用",
         "newAvailable": "版本 $[v] 可用！",
         "update": "更新",
-        "upToDate": "应用程序已是最新！",
+        "upToDate": "软件版本已是最新！",
         "version": "版本 $[v]",
-        "waiting": "正在检查GitHub获取更新..."
+        "waiting": "正在从GitHub获取更新..."
     },
     "userSelect": {
         "heading": "选择用户"
